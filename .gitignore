@@ -1,6 +1,7 @@
  #忽略
 node_modules
 dist
+11
 .*
 
 # 不忽略的文件
