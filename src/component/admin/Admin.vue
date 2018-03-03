@@ -1,21 +1,21 @@
 <template>
-    <div class="admin">
+  <div class="admin">
 
-        <el-container>
-            <el-aside width="200px">
-                <m-aside></m-aside>
-            </el-aside>
-            <el-container>
-                <el-header>
-                    <app-header></app-header>
-                </el-header>
-                <el-main>
-                    <router-view></router-view>
-                </el-main>
-            </el-container>
-        </el-container>
-
-    </div>
+    <el-container>
+      <el-header>
+        <app-header></app-header>
+      </el-header>
+      <el-container>
+        <el-aside width="200px">
+          <m-aside></m-aside>
+        </el-aside>
+        <el-main>
+         
+          <router-view></router-view>
+        </el-main>
+      </el-container>
+    </el-container>
+  </div>
 </template>
 
 <script>
@@ -32,23 +32,21 @@ export default {
 <style scoped lang="less">
 .admin {
   height: 100%;
- 
 }
- .el-header, .el-footer {
-    line-height: 60px;
-  }
- .el-container {
+.el-header {
+  line-height: 60px;
+}
+.el-container {
+  height: 100%;
+  .el-aside {
+    text-align: center;
+    // line-height: 200px;
     height: 100%;
-    .el-aside {
-      background-color: #d3dce6;
-      color: #333;
-      text-align: center;
-      line-height: 200px;
-      height: 100%;
-    }
-
-    .el-main {
-      background-color: #e9eef3;
-    }
+    background-color: #fff;
   }
+
+  .el-main {
+    background-color: #fff;
+  }
+}
 </style>
